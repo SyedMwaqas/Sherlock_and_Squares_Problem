@@ -1,0 +1,41 @@
+#include<stdio.h>
+#include<iostream>
+#include <cstring>
+#include<math.h>
+using namespace std;
+
+
+int countSquares(int a, int b) 
+{ 
+    return (floor(sqrt(b)) - ceil(sqrt(a)) + 1); 
+} 
+  
+// Driver code 
+int main() 
+{ 
+    int y[2000000],i,j,cnt=0,e,s,n1;
+
+  //  printf("enter values");
+    scanf("%d",&n1);
+
+
+    for(i=0;i<n1;i++){
+    
+    scanf("%d",&s);
+
+    
+        y[i]=countSquares(s, e); 
+    
+    }
+    
+    for(i=0;i<n1;i++){
+        
+    cout<<y[i]<<"\n";
+
+        
+    }
+    
+    
+    
+    return 0; 
+} 
